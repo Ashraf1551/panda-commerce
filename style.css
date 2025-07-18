@@ -2,6 +2,7 @@
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -27,6 +28,33 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
+}
+
+.product-li {
+  position: relative;
+}
+.dropdown-nav-items {
+  position: absolute;
+  top: 30%;
+  left: -50px;
+  padding: 5px 0px;
+  list-style: none;
+  background-color: white;
+  text-align: center;
+  width: 150px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 2px 0 8px 0 rgb(0 0 0 / 15%);
+  visibility: hidden;
+}
+
+.dropdown-nav-items li {
+  margin: 5px 0;
+}
+
+.product-li:hover .dropdown-nav-items {
+  visibility: visible;
+  top: 100%;
+  transition: 0.5s;
 }
 
 .search-parent {
@@ -151,6 +179,21 @@ nav {
   background: rgb(244, 244, 244);
 }
 
+.shoes-backpack-section-title-parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shoes-backpack-section-title-parent h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.shoes-backpack-section-title-parent p {
+  font-size: 20px;
+  color: #ff9d00;
+}
+
 /* Shoes */
 .shoes-section {
   padding: 50px 0;
@@ -183,4 +226,27 @@ nav {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 12px;
+}
+
+/* contact section */
+.contact-us-parent {
+  background-color: #fff2f1;
+  text-align: center;
+  padding: 25px 15px;
+  margin: 35px auto;
+  border-radius: 15px;
+}
+
+.contact-inp-btn-parent {
+  display: flex;
+  justify-content: center;
+}
+.contact-inp-btn-parent input {
+  border: none;
+  padding: 15px 152px;
+}
+
+.contact-inp-btn-parent .panda-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
